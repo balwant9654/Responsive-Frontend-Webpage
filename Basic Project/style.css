@@ -1,0 +1,249 @@
+/* CSS Reset */
+* {
+    margin : 0;
+    padding : 0;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height : 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+}
+
+/* Navigation bar : Logo and image */
+#logo {
+    margin : 10px 10px;
+}
+
+#logo img {
+    margin: 0px 19px;
+    height: 100px;
+    border-radius: 40% 40%;
+}
+
+/* Navigation bar : List styling  */
+#navbar {
+    display: flex;
+    top :0px;
+    align-items: center;
+    position: relative;
+}
+
+#navbar::before {
+    content:"";
+    background-color: rgb(231, 45, 45);
+    height : 100%;
+    width: 100%;
+    z-index : -1;
+    position : absolute;
+    opacity: 0.5;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 6px 2px;
+    padding: 20px 13px;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    display : block;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 16px 35px;
+}
+
+#navbar ul li a:hover{
+    background-color:white;
+    color : black;
+    font-weight: bold;
+}
+
+/* Section */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:167px 95px;
+    height : 0px;
+}
+
+#home::before{
+    content:"";
+    background: url('fd1.jpg') no-repeat center center/cover;
+    height: 448px;
+    top :0px;
+    left:0px;
+    width: 100%;
+    z-index : -1;
+    position : absolute;
+    opacity: 0.5;
+}
+
+#home h1{
+    display: block;
+    margin:auto;
+    color : rgb(53, 13, 163);
+    text-align: center;
+}
+
+#home p{
+    display : block;
+    margin:auto;
+    color:rgb(53, 13, 163);
+    text-align: center;
+    font-size: 1.01rem;
+}
+
+/* Services Sections */
+#services{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-container{
+    position:relative;
+}
+
+.service-container::before{
+    content:"";
+    background:url('ServicesBg.jpg')no-repeat center center/cover;
+    height: 585px;
+    width:100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.service-container h1{
+    display: block;
+    margin:auto;
+    color : rgb(28, 148, 218);
+    text-align: center;
+}
+
+#services .box {
+    border: 2px solid black;
+    display: block;
+    margin: 30px 8px;
+    padding: 27px 4px;
+    border-radius: 20px;
+    background-color: #f7e7e7;
+}
+
+#services .box img{
+    display:block;
+    margin:10px auto;
+}
+
+/* Client Sections */
+
+#client-section{
+    height: 300px;
+    position:relative;
+    margin: 14px 0px;
+}
+
+#client-section::before{
+    content:"";
+    background: url('foody.jpg') no-repeat center center/cover;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.5;
+    position:absolute;
+}
+
+#client-section h1{
+    display: block;
+    margin:auto;
+    color : rgb(27, 15, 197);
+    text-align: center;
+}
+
+#clients {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height : 100px;
+    border-radius: 25%;
+}
+
+.client-item {
+    padding: 14px;
+}
+
+/* Contact Section */
+#contact{
+    position :relative;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('cntcUs.jpg')no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,textarea{
+    width:100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+#contact-box form{
+    width:50%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* Utility class */
+.h-primary {
+    font-size: 4rem;
+}
+
+.h-secondary {
+    font-size: 2rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    border : 3px solid white;
+    color : white;
+    background-color: rgb(241, 89, 89);
+    font-size: 1.2rem;
+    padding:6px 35px;
+    margin:10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
